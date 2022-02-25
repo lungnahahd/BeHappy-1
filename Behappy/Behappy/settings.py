@@ -26,7 +26,8 @@ SECRET_KEY = 'p!1m7n1gi#q9+@#x^q__(hgrnagn!hkb+(x!af!t1*73ju+mtz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# 아래처럼 ec2에 배포를 위해서는 해당 EC2의 퍼블릭 IPv4 DNS 추가가 필요
+ALLOWED_HOSTS = ["ec2-3-34-252-139.ap-northeast-2.compute.amazonaws.com"]
 
 
 # Application definition
